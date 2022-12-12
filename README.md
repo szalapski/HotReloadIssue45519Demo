@@ -1,1 +1,5 @@
-In Windows, run run.bat. The site should start up.  Edit anything in Index.razor to watch hot reload fail.
+In Windows, run 
+
+`dotnet watch --verbose --project ./TradeCars/Server`
+
+The site should start up.  You'll see `Hot reload capabilities: .` which portends the failure.  Edit anything in Index.razor to watch hot reload fail.
