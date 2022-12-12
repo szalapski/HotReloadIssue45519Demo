@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "TradeCars.Client": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:54227;http://localhost:54228"
+    }
+  }
+}

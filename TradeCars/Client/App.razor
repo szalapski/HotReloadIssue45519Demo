@@ -1,0 +1,13 @@
+﻿@namespace TradeCars.Client
+
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData">
+        </RouteView>
+    </Found>
+    <NotFound>
+        <LayoutView>
+            <div class="mx-4">Sorry, there's nothing at this address.  <a href="/">Go to home page</a></div>
+        </LayoutView>
+    </NotFound>
+</Router>
