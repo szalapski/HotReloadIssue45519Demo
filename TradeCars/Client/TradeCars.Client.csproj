@@ -28,4 +28,10 @@
         <Folder Include="Properties\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Update="wwwroot\app.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
