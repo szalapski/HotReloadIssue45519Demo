@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using Microsoft.OpenApi.Models;
-using System.Runtime.InteropServices;
 
 namespace TradeCars.Server;
 
@@ -24,9 +23,10 @@ public static class Program
 
         var app = builder.Build();
 
-        if (builder.Environment.IsEnvironment("Developer"))
+        Console.WriteLine($"{builder.Environment.EnvironmentName} environment detected.");
+
+        if (builder.Environment.IsEnvironment("Development"))
         {
-            Console.WriteLine($"{builder.Environment.EnvironmentName} environment detected.");
             app.UseWebAssemblyDebugging();
         }
         else
