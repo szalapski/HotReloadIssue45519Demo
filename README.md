@@ -1,4 +1,6 @@
-In Windows, run 
+See https://github.com/dotnet/aspnetcore/issues/51781
+
+To reproduce the problem:  In Windows, run 
 
 `dotnet watch --verbose --project ./TradeCars/Server`
 
