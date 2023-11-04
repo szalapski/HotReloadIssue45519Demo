@@ -24,9 +24,21 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
-        "environmentVariables": {
-            "ASPNETCORE_ENVIRONMENT": "Development"
-        }
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+
+    "Watch": {
+      "commandName": "Executable",
+      "executablePath": "dotnet.exe",
+      "commandLineArgs": "watch --project D:\\Projects\\Clients\\szalapski\\HotReloadIssue45519Demo\\TradeCars\\Server\\TradeCars.Server.csproj run -c Debug",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:44370/",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_USE_POLLING_FILE_WATCHER": "1"
+      }
     }
   }
 }
