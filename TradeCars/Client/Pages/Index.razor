@@ -2,7 +2,7 @@
 
 <PageTitle>Issue 45519</PageTitle>
 
-<p>Edit here in Index.razor to see hot reload fail.</p>
+<p>Edit here (or in <code>@@code{}</code>) in Index.razor to see hot reload @Message</p>
 <br/>
 
 <a href="https://github.com/dotnet/aspnetcore/issues/51781">The current issue 51781 in Github</a> |
@@ -10,4 +10,5 @@
 <a href="https://github.com/dotnet/aspnetcore/issues/45519">The earlier issue 45519 in Github</a>, with links to many other issues, mistakenly closed |
 
 @code { 
+    private string Message =  "in action.";
 }
